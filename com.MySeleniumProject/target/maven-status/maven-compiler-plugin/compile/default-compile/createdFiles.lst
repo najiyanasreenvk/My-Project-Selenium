@@ -1,9 +1,0 @@
-Utilities\GeneralUtilities.class
-Utilities\ExcelreadUtility.class
-PageClasses\LoginPageClass.class
-Utilities\RandomDataUtility.class
-PageClasses\ClientPageClass.class
-PageClasses\OppertunityPageClass.class
-PageClasses\DashBoardPageClass.class
-Utilities\WaitUtilities.class
-Utilities\TableUtility.class
