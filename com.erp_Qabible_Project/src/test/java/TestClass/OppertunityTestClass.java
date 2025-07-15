@@ -17,7 +17,7 @@ public class OppertunityTestClass extends BaseClass {
 	DashBoardPageClass dp;
 	OppertunityPageClass op;
 	
-  @Test
+  @Test(priority = 1)
   public void verifyoppertunityTitleIsvisible() throws IOException {
 	  lp= new LoginPageClass(driver);
 	  dp=lp.signIn(ExcelreadUtility.getStringData(0, 0, "LoginPage"),ExcelreadUtility.getIntData(0, 1, "LoginPage"));
@@ -28,7 +28,7 @@ public class OppertunityTestClass extends BaseClass {
 	  Assert.assertTrue(op.oppertunityTitleIsDispalyed(),"Oppertunity title is not displayed");
 	  
   }
-  @Test
+  @Test(priority =2 )
   public void verifySearchResultContainsTester() throws IOException {
 	  lp=new LoginPageClass(driver);
 	  dp=lp.signIn(ExcelreadUtility.getStringData(0, 0, "LoginPage"),ExcelreadUtility.getIntData(0, 1, "LoginPage"));

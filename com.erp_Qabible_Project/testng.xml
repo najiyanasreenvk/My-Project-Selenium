@@ -9,10 +9,10 @@
 
   <test thread-count="5" name="Test">
     <classes>
-      <!--<class name="TestClass.DashboardTestClass"/>-->
+      <class name="TestClass.DashboardTestClass"/>
       <class name="TestClass.LoginTestClass"/>
-     <!-- <class name="TestClass.OppertunityTestClass"/>
-      <class name="TestClass.ClientTestClass"/>-->
+      <class name="TestClass.OppertunityTestClass"/>
+      <class name="TestClass.ClientTestClass"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- TestSuite -->

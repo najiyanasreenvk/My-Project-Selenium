@@ -16,7 +16,7 @@ public class ClientTestClass extends BaseClass {
 	LoginPageClass lp;
 	DashBoardPageClass dp;
 	ClientPageClass cp;
-  @Test
+  @Test(priority = 1)
   public void verifyCreateNewClient() throws IOException {
 	 lp =new  LoginPageClass(driver);
 	 dp=lp.signIn(ExcelreadUtility.getStringData(0, 0, "LoginPage"),ExcelreadUtility.getIntData(0, 1, "LoginPage"));
@@ -34,7 +34,7 @@ public class ClientTestClass extends BaseClass {
 	
 	  
   }
-  @Test
+  @Test(priority = 2)
   public void verifySearchClientfunctionality() throws IOException {
 	  lp=new LoginPageClass(driver);
 	  dp=lp.signIn(ExcelreadUtility.getStringData(0, 0, "LoginPage"),ExcelreadUtility.getIntData(0, 1, "LoginPage"));
@@ -56,7 +56,7 @@ public class ClientTestClass extends BaseClass {
   }
   
   
-  @Test
+  @Test(priority = 3)
   public void verifyNewClientButtonisVisible() throws IOException {
 	  lp= new LoginPageClass(driver);
 	  lp.signIn(ExcelreadUtility.getStringData(0, 0, "LoginPage"),ExcelreadUtility.getIntData(0, 1, "LoginPage"));

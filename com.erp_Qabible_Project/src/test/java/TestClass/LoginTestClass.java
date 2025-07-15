@@ -15,7 +15,7 @@ public class LoginTestClass extends BaseClass {
 	LoginPageClass lp;
 	DashBoardPageClass dp;
 
-	@Test
+	@Test(priority = 1)
 	public void verifySuccessfullLogin() throws IOException {
 		lp = new LoginPageClass(driver);
 		dp=lp.signIn(ExcelreadUtility.getStringData(0, 0, "LoginPage"),ExcelreadUtility.getIntData(0, 1, "LoginPage"));
@@ -27,7 +27,7 @@ public class LoginTestClass extends BaseClass {
 
 	}
 
-	@Test(dataProvider="unsuccessfullLogin",dataProviderClass = DataProviderTestClass.class)
+	@Test(priority = 2, dataProvider="unsuccessfullLogin",dataProviderClass = DataProviderTestClass.class)
 	public void verifyUnsuccessfullLogin(String u,String p) throws IOException {
 		lp = new LoginPageClass(driver);
 		lp.signIn(u,p);
@@ -37,7 +37,7 @@ public class LoginTestClass extends BaseClass {
 
 	}
 
-	@Test
+	@Test(priority = 3)
 	public void verifytheCurrentApplicationisloginWhileHitting() throws IOException {
 		lp = new LoginPageClass(driver);
 		String actualResult2 = lp.getcurrentUrlLogin();
@@ -46,7 +46,7 @@ public class LoginTestClass extends BaseClass {
 
 	}
 
-	@Test
+	@Test(priority = 4)
 	public void varifyRemembermeisCheckedOrnot() throws IOException {
 		lp = new LoginPageClass(driver);
 		//lp.signIn(ExcelreadUtility.getStringData(0, 0, "LoginPage"),ExcelreadUtility.getIntData(0, 1, "LoginPage"));
@@ -54,7 +54,7 @@ public class LoginTestClass extends BaseClass {
 		System.out.println("Remember me chekbox is selected: " + actualResult);
 		Assert.assertFalse(actualResult, "Remember me checkbox is selected by default ");
 	}
-	@Test
+	@Test(priority = 5)
 	public void verifyAttributOfUsernameField() throws IOException {
 		lp =new LoginPageClass(driver);
 		String actualresult=lp.getAttributeofUsername();

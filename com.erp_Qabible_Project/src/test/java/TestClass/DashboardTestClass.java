@@ -17,7 +17,7 @@ public class DashboardTestClass extends BaseClass {
 	  
   
   
-  @Test
+  @Test(priority = 1)
   public void verifytheToolTipShowed () throws IOException {
 	  lp= new LoginPageClass(driver);
 	  dp=lp.signIn(ExcelreadUtility.getStringData(0, 0, "LoginPage"),ExcelreadUtility.getIntData(0, 1, "LoginPage"));
@@ -31,7 +31,7 @@ public class DashboardTestClass extends BaseClass {
 	  
   }
   
-  @Test
+  @Test(priority = 2)
   public void verifyLogoIsDisplayed() throws IOException {
 	  lp= new LoginPageClass(driver);
 	  dp=lp.signIn(ExcelreadUtility.getStringData(0, 0, "LoginPage"),ExcelreadUtility.getIntData(0, 1, "LoginPage"));
