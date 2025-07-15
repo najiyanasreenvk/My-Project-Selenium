@@ -3,8 +3,10 @@ package BaseClass;
 import org.testng.annotations.Test;
 
 import Constant.ConstantClass;
+import extentReport.ExtentManager;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -37,6 +39,10 @@ public class BaseClass {
 	@AfterMethod
 	public void afterMethod() {
 		driver.quit();
+	}
+	@BeforeSuite(alwaysRun = true)
+	public void createReport() {
+		ExtentManager.createInstance();
 	}
 
 }

@@ -1,25 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-14T11:27:32 IST" name="Default suite" finished-at="2025-07-14T11:27:48 IST" duration-ms="15949">
+  <suite started-at="2025-07-15T15:07:26 IST" name="TestSuite" finished-at="2025-07-15T15:08:12 IST" duration-ms="46133">
     <groups>
     </groups>
-    <test started-at="2025-07-14T11:27:32 IST" name="Default test" finished-at="2025-07-14T11:27:48 IST" duration-ms="15949">
-      <class name="TestClass.OppertunityTestClass">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.OppertunityTestClass@3754a4bf]" started-at="2025-07-14T11:27:32 IST" name="beforeMethod" finished-at="2025-07-14T11:27:35 IST" duration-ms="3508" status="PASS">
+    <test started-at="2025-07-15T15:07:26 IST" name="Test" finished-at="2025-07-15T15:08:12 IST" duration-ms="46133">
+      <class name="TestClass.LoginTestClass">
+        <test-method is-config="true" signature="createReport()[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:07:26 IST" name="createReport" finished-at="2025-07-15T15:07:26 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createReport -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:07:26 IST" name="beforeMethod" finished-at="2025-07-15T15:07:31 IST" duration-ms="4916" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifySearchResultContainsTester()[pri:0, instance:TestClass.OppertunityTestClass@3754a4bf]" started-at="2025-07-14T11:27:35 IST" name="verifySearchResultContainsTester" finished-at="2025-07-14T11:27:47 IST" duration-ms="12063" status="PASS">
+        <test-method signature="varifyRemembermeisCheckedOrnot()[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:07:31 IST" name="varifyRemembermeisCheckedOrnot" finished-at="2025-07-15T15:07:31 IST" duration-ms="274" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySearchResultContainsTester -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestClass.OppertunityTestClass@3754a4bf]" started-at="2025-07-14T11:27:47 IST" name="afterMethod" finished-at="2025-07-14T11:27:48 IST" duration-ms="298" status="PASS">
+        </test-method> <!-- varifyRemembermeisCheckedOrnot -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:07:31 IST" name="afterMethod" finished-at="2025-07-15T15:07:32 IST" duration-ms="537" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- TestClass.OppertunityTestClass -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:07:32 IST" name="beforeMethod" finished-at="2025-07-15T15:07:35 IST" duration-ms="3527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyAttributOfUsernameField()[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:07:35 IST" name="verifyAttributOfUsernameField" finished-at="2025-07-15T15:07:37 IST" duration-ms="1969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAttributOfUsernameField -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:07:37 IST" name="afterMethod" finished-at="2025-07-15T15:07:38 IST" duration-ms="792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:07:38 IST" name="beforeMethod" finished-at="2025-07-15T15:07:42 IST" duration-ms="3491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifySuccessfullLogin()[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:07:42 IST" name="verifySuccessfullLogin" finished-at="2025-07-15T15:07:50 IST" duration-ms="8322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfullLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:07:50 IST" name="afterMethod" finished-at="2025-07-15T15:07:51 IST" duration-ms="795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:07:51 IST" name="beforeMethod" finished-at="2025-07-15T15:07:54 IST" duration-ms="2517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUnsuccessfullLogin(java.lang.String,java.lang.String)[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:07:54 IST" name="verifyUnsuccessfullLogin" data-provider="unsuccessfullLogin" finished-at="2025-07-15T15:07:56 IST" duration-ms="2067" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnsuccessfullLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:07:56 IST" name="afterMethod" finished-at="2025-07-15T15:07:57 IST" duration-ms="638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:07:57 IST" name="beforeMethod" finished-at="2025-07-15T15:07:59 IST" duration-ms="2771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUnsuccessfullLogin(java.lang.String,java.lang.String)[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:07:59 IST" name="verifyUnsuccessfullLogin" data-provider="unsuccessfullLogin" finished-at="2025-07-15T15:08:02 IST" duration-ms="2693" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[456324]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnsuccessfullLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:08:02 IST" name="afterMethod" finished-at="2025-07-15T15:08:03 IST" duration-ms="542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:08:03 IST" name="beforeMethod" finished-at="2025-07-15T15:08:06 IST" duration-ms="3588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUnsuccessfullLogin(java.lang.String,java.lang.String)[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:08:06 IST" name="verifyUnsuccessfullLogin" data-provider="unsuccessfullLogin" finished-at="2025-07-15T15:08:07 IST" duration-ms="1073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnsuccessfullLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:08:07 IST" name="afterMethod" finished-at="2025-07-15T15:08:08 IST" duration-ms="578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:08:08 IST" name="beforeMethod" finished-at="2025-07-15T15:08:11 IST" duration-ms="3428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifytheCurrentApplicationisloginWhileHitting()[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:08:11 IST" name="verifytheCurrentApplicationisloginWhileHitting" finished-at="2025-07-15T15:08:11 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytheCurrentApplicationisloginWhileHitting -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestClass.LoginTestClass@1cf56a1c]" started-at="2025-07-15T15:08:11 IST" name="afterMethod" finished-at="2025-07-15T15:08:12 IST" duration-ms="604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TestClass.LoginTestClass -->
+    </test> <!-- Test -->
+  </suite> <!-- TestSuite -->
 </testng-results>
