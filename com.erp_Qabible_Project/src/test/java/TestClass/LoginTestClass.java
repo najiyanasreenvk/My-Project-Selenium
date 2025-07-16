@@ -15,7 +15,7 @@ public class LoginTestClass extends BaseClass {
 	LoginPageClass lp;
 	DashBoardPageClass dp;
 
-	@Test(priority = 1)
+	@Test(priority = 1,groups = {"Group 1"})
 	public void verifySuccessfullLogin() throws IOException {
 		lp = new LoginPageClass(driver);
 		dp=lp.signIn(ExcelreadUtility.getStringData(0, 0, "LoginPage"),ExcelreadUtility.getIntData(0, 1, "LoginPage"));
@@ -27,7 +27,7 @@ public class LoginTestClass extends BaseClass {
 
 	}
 
-	@Test(priority = 2, dataProvider="unsuccessfullLogin",dataProviderClass = DataProviderTestClass.class)
+	@Test( priority = 2, dataProvider="unsuccessfullLogin",dataProviderClass = DataProviderTestClass.class)
 	public void verifyUnsuccessfullLogin(String u,String p) throws IOException {
 		lp = new LoginPageClass(driver);
 		lp.signIn(u,p);
@@ -37,7 +37,7 @@ public class LoginTestClass extends BaseClass {
 
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3,groups = {"Group 1"})
 	public void verifytheCurrentApplicationisloginWhileHitting() throws IOException {
 		lp = new LoginPageClass(driver);
 		String actualResult2 = lp.getcurrentUrlLogin();
@@ -54,7 +54,7 @@ public class LoginTestClass extends BaseClass {
 		System.out.println("Remember me chekbox is selected: " + actualResult);
 		Assert.assertFalse(actualResult, "Remember me checkbox is selected by default ");
 	}
-	@Test(priority = 5)
+	@Test(priority = 5,groups = {"Group2"})
 	public void verifyAttributOfUsernameField() throws IOException {
 		lp =new LoginPageClass(driver);
 		String actualresult=lp.getAttributeofUsername();

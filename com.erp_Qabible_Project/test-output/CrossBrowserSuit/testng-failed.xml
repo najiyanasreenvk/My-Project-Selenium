@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CrossBrowserSuit]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Edge Test(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="TestClass.OppertunityTestClass">
+        <methods>
+          <include name="createReport"/>
+          <include name="beforeMethod"/>
+          <include name="verifySearchResultContainsTester"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- TestClass.OppertunityTestClass -->
+    </classes>
+  </test> <!-- Edge Test(failed) -->
+</suite> <!-- Failed suite [CrossBrowserSuit] -->
